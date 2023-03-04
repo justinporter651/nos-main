@@ -1,0 +1,2 @@
+Change sizes on meet page for phone
+Change position on hero image in community for 1200px
