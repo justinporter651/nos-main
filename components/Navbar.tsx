@@ -1,32 +1,32 @@
-import { AnimatePresence, motion, useAnimation } from "framer-motion";
-import { NextURL } from "next/dist/server/web/next-url";
-import Link from "next/link";
-import { FC, MouseEventHandler, useState } from "react";
-import Shield from "./svg/shield";
-import ShieldB from "./svg/shieldB";
-import NavbarModal from "./navbarModal";
+import {AnimatePresence, motion, useAnimation} from 'framer-motion';
+import {NextURL} from 'next/dist/server/web/next-url';
+import Link from 'next/link';
+import {FC, MouseEventHandler, useContext, useState} from 'react';
+import Shield from './svg/shield';
+import ShieldB from './svg/shieldB';
+import NavbarModal from './navbarModal';
+import {UserContext} from '../lib/context';
 
 function NavVariants(delayTime) {
   return {
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { ease: "easeOut", duration: 0.5, delay: delayTime }
+      transition: {ease: 'easeOut', duration: 0.5, delay: delayTime},
     },
     hoverOn: {
-      scale: 1.1
+      scale: 1.1,
     },
     hoverOff: {
-      scale: 1
+      scale: 1,
     },
-    hidden: { opacity: 0, scale: 1.5 }
+    hidden: {opacity: 0, scale: 1.5},
   };
 }
 
-const emptyHandler = () => {};
-
-const NavBarWB = ({ cookieCrumb, isMobile }) => {
+const NavBarWB = ({cookieCrumb, isMobile}) => {
   const [navOpen, setNavOpen] = useState(false);
+  const {user, username} = useContext(UserContext);
   const close = () => {
     setNavOpen(false);
   };
@@ -34,51 +34,51 @@ const NavBarWB = ({ cookieCrumb, isMobile }) => {
     setNavOpen(true);
   };
   const control = useAnimation();
-  control.start("visible");
+  control.start('visible');
   return (
     <>
-      <motion.nav className="navbar">
+      <motion.nav className='navbar'>
         {cookieCrumb == null ? (
-          <Link href={"/"} passHref>
-            <motion.div className="logo">
+          <Link href={'/'} passHref>
+            <motion.div className='logo'>
               <motion.div
-                className="logoDiv"
+                className='logoDiv'
                 animate={control}
-                initial="hidden"
+                initial='hidden'
                 variants={NavVariants(0.5)}
-                whileHover={"hoverOn"}
+                whileHover={'hoverOn'}
                 onHoverEnd={() => {
-                  control.start("hoverOff");
+                  control.start('hoverOff');
                 }}
               >
                 <Shield />
-                <motion.div className="typeLogo">
-                  <p className="largeLogo">
+                <motion.div className='typeLogo'>
+                  <p className='largeLogo'>
                     N.O.S.<br></br>
-                    <span className="smallLogo sub">Est. 2013</span>
+                    <span className='smallLogo sub'>Est. 2013</span>
                   </p>
                 </motion.div>
               </motion.div>
             </motion.div>
           </Link>
         ) : (
-          <Link href={"/"} passHref>
-            <motion.div className="logo">
+          <Link href={'/'} passHref>
+            <motion.div className='logo'>
               <motion.div
-                className="logoDivB"
+                className='logoDivB'
                 animate={control}
-                initial="hidden"
+                initial='hidden'
                 variants={NavVariants(0.5)}
-                whileHover={"hoverOn"}
+                whileHover={'hoverOn'}
                 onHoverEnd={() => {
-                  control.start("hoverOff");
+                  control.start('hoverOff');
                 }}
               >
                 <ShieldB />
-                <motion.div className="typeLogoB">
-                  <text className="largeLogo">
+                <motion.div className='typeLogoB'>
+                  <text className='largeLogo'>
                     N.O.S.<br></br>
-                    <span className="smallLogo sub">Est. 2013</span>
+                    <span className='smallLogo sub'>Est. 2013</span>
                   </text>
                 </motion.div>
               </motion.div>
@@ -87,66 +87,66 @@ const NavBarWB = ({ cookieCrumb, isMobile }) => {
         )}
         {cookieCrumb == null ? (
           <motion.div
-            className="navList"
+            className='navList'
             onClick={() => {
               navOpen ? close() : open();
             }}
           >
-            <Link href={"meet"} passHref>
+            <Link href={'meet'} passHref>
               <motion.a
-                className="medium fs"
+                className='medium fs'
                 animate={control}
-                initial="hidden"
+                initial='hidden'
                 variants={NavVariants(0.6)}
-                whileHover={"hoverOn"}
+                whileHover={'hoverOn'}
                 onHoverEnd={() => {
-                  control.start("hoverOff");
+                  control.start('hoverOff');
                 }}
               >
                 Meet Us
               </motion.a>
             </Link>
-            <Link href={"community"} passHref>
+            <Link href={'community'} passHref>
               <motion.a
-                className="medium fs"
+                className='medium fs'
                 animate={control}
-                initial="hidden"
+                initial='hidden'
                 variants={NavVariants(0.7)}
-                whileHover={"hoverOn"}
+                whileHover={'hoverOn'}
                 onHoverEnd={() => {
-                  control.start("hoverOff");
+                  control.start('hoverOff');
                 }}
               >
                 Community
               </motion.a>
             </Link>
-            <Link href={"train"} passHref>
+            <Link href={'train'} passHref>
               <motion.a
-                className="medium fs"
+                className='medium fs'
                 animate={control}
-                initial="hidden"
+                initial='hidden'
                 variants={NavVariants(0.9)}
-                whileHover={"hoverOn"}
+                whileHover={'hoverOn'}
                 onHoverEnd={() => {
-                  control.start("hoverOff");
+                  control.start('hoverOff');
                 }}
               >
                 Train
               </motion.a>
             </Link>
-            <div className="lastBar"></div>
+            <div className='lastBar'></div>
           </motion.div>
         ) : (
           <Link href={cookieCrumb} passHref>
-            <div className="backButtonParent">
+            <div className='backButtonParent'>
               <motion.p
-                className="medium fs backButton"
+                className='medium fs backButton'
                 animate={control}
-                initial="hidden"
+                initial='hidden'
                 variants={NavVariants(0.9)}
-                whileHover={"hoverOn"}
+                whileHover={'hoverOn'}
                 onHoverEnd={() => {
-                  control.start("hoverOff");
+                  control.start('hoverOff');
                 }}
               >
                 Back

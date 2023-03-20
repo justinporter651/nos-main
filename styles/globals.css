@@ -1,25 +1,25 @@
 @font-face {
-  font-family: "Assistant";
-  src: url("../public/Fonts/Assistant-VariableFont_wght.ttf");
+  font-family: 'Assistant';
+  src: url('../public/Fonts/Assistant-VariableFont_wght.ttf');
 }
 
 @font-face {
-  font-family: "Dosis";
-  src: url("../public/Fonts/Dosis-VariableFont_wght.ttf");
+  font-family: 'Dosis';
+  src: url('../public/Fonts/Dosis-VariableFont_wght.ttf');
 }
 
 @font-face {
-  font-family: "Noto Sans";
-  src: url("../public/Fonts/NotoSans-Regular.ttf");
+  font-family: 'Noto Sans';
+  src: url('../public/Fonts/NotoSans-Regular.ttf');
 }
 
 @font-face {
-  font-family: "Yellowtail";
+  font-family: 'Yellowtail';
   src: url(../public/Fonts/Yellowtail-Regular.ttf);
 }
 
 @font-face {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-stretch: extra-condensed;
   font-style: italic;
   font-weight: 200;
@@ -27,41 +27,41 @@
 }
 
 @font-face {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-stretch: extra-condensed;
   font-weight: 300;
   src: url(../public/Fonts/FiraSansExtraCondensed-Medium.ttf);
 }
 
 @font-face {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-stretch: extra-condensed;
   font-weight: 100;
   src: url(../public/Fonts/FiraSansExtraCondensed-Light.ttf);
 }
 
 @font-face {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-stretch: normal;
   font-weight: 300;
   src: url(../public/Fonts/FiraSans-Medium.ttf);
 }
 
 @font-face {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-weight: 100;
   font-stretch: normal;
   src: url(../public/Fonts/FiraSans-Light.ttf);
 }
 
 @font-face {
-  font-family: "Z Slab";
+  font-family: 'Z Slab';
   font-weight: 500;
   src: url(../public/Fonts/ZillaSlab-Medium.ttf);
 }
 
 @font-face {
-  font-family: "Z Slab";
+  font-family: 'Z Slab';
   font-weight: 100;
   src: url(../public/Fonts/ZillaSlab-Light.ttf);
 }
@@ -131,19 +131,19 @@ a {
 }
 
 .av {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .yt {
-  font-family: "Yellowtail";
+  font-family: 'Yellowtail';
 }
 
 .fs {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
 }
 
 .zs {
-  font-family: "Z Slab";
+  font-family: 'Z Slab';
 }
 
 .dos {
@@ -270,7 +270,7 @@ a {
 }
 
 .selected::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 0;
   left: 20%;
@@ -529,7 +529,7 @@ a {
 }
 
 .navList::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 50%;
   height: 0;
@@ -539,7 +539,7 @@ a {
 }
 
 .navList::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 50%;
   height: 0;
@@ -845,7 +845,7 @@ a {
 }
 
 .meetUs {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
   padding: 1rem 2rem;
   border-radius: 4rem;
@@ -1018,7 +1018,7 @@ a {
 }
 
 .navListW::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 50%;
   height: 0;
@@ -1028,7 +1028,7 @@ a {
 }
 
 .navListW::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 50%;
   height: 0;
@@ -1302,7 +1302,7 @@ a {
 }
 
 .groupTraining {
-  content: "";
+  content: '';
   position: absolute;
   background-image: url(../public/Community-15_xsmall.png);
   background-position: 40%;
@@ -1332,7 +1332,7 @@ a {
   cursor: pointer;
 }
 .personalTraining {
-  content: "";
+  content: '';
   position: absolute;
   background-image: url(../public/Community-16_xsmall.png);
   background-position: 80%;
@@ -1407,6 +1407,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   padding: 0 5% 5% 5%;
 }
 
@@ -1414,13 +1415,12 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
-  padding-bottom: 10vh;
+  right: 0;
+  bottom: 0;
   background-color: #000000e1;
   display: grid;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   z-index: 101;
 }
 
@@ -1529,7 +1529,7 @@ a {
 }
 
 .topBarDivThin::before {
-  content: "";
+  content: '';
   position: absolute;
   border-width: 0.5px;
   border-style: solid;
@@ -1541,7 +1541,7 @@ a {
 }
 
 .topBarDivThinBlue::before {
-  content: "";
+  content: '';
   position: absolute;
   border-width: 1px;
   border-style: solid;
@@ -1553,7 +1553,7 @@ a {
 }
 
 .topBarDiv::before {
-  content: "";
+  content: '';
   position: absolute;
   border-width: 2px;
   border-style: solid;
@@ -1801,7 +1801,7 @@ a {
   }
 
   .slideOne::after {
-    content: "";
+    content: '';
     position: absolute;
     right: 60%;
     top: 10%;
@@ -1967,7 +1967,7 @@ a {
   }
 
   .meetUs {
-    font-family: "Fira Sans", sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
     padding: 1rem 2rem;
     border-radius: 4rem;
@@ -2290,7 +2290,7 @@ Beginning of the Train Page
   margin-top: auto;
   margin-bottom: auto;
   padding-left: 30px;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 35px;
   line-height: 60px;
   font-weight: 500;
@@ -2331,7 +2331,7 @@ h1 {
 }
 
 .card-title {
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   color: #111;
   font-weight: 500;
   text-align: center;
@@ -2372,7 +2372,7 @@ h1 {
 }
 
 .audience {
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 15px;
   line-height: 20px;
   font-style: italic;
@@ -2381,14 +2381,14 @@ h1 {
 }
 
 .pricing-paragraph {
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
 }
 
 .times-p {
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
   line-height: 21px;
   text-align: center;
@@ -2416,7 +2416,7 @@ h1 {
   align-items: center;
   border-radius: 20px;
   background-color: #f55;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 20px;
   font-weight: 400;
   text-align: center;
@@ -2431,7 +2431,7 @@ h1 {
   font-size: 40px;
   font-weight: 600;
   color: #fff;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .picturecard {
@@ -2439,7 +2439,7 @@ h1 {
   height: 240px;
   border: 2px solid #faa;
   border-radius: 16px;
-  background-image: url("../public/_DSC1602_xsmall.png");
+  background-image: url('../public/_DSC1602_xsmall.png');
   background-position: 50% 70%;
   background-size: auto 130%;
   background-repeat: no-repeat;
@@ -2463,7 +2463,7 @@ h1 {
   z-index: 1;
   width: 150px;
   height: 240px;
-  background-image: url("../public/Community-15_xsmall.png");
+  background-image: url('../public/Community-15_xsmall.png');
   background-position: 40% 50%;
   background-size: auto 150%;
 }
@@ -2475,7 +2475,7 @@ h1 {
   z-index: 2;
   width: 150px;
   height: 240px;
-  background-image: url("../public/Community-16_xsmall.png");
+  background-image: url('../public/Community-16_xsmall.png');
   background-position: 60% 50%;
   background-size: auto 130%;
 }
@@ -2484,7 +2484,7 @@ h1 {
   position: absolute;
   top: 40%;
   right: 15%;
-  background-image: url("../public/Community-02.png");
+  background-image: url('../public/Community-02.png');
   background-position: 50% 50%;
   background-size: auto 120%;
 }
@@ -2494,7 +2494,7 @@ h1 {
   top: 55%;
   right: 25%;
   z-index: 1;
-  background-image: url("../public/Community-05.png");
+  background-image: url('../public/Community-05.png');
   background-position: 35% 50%;
   background-size: auto 160%;
 }
@@ -2562,7 +2562,7 @@ h1 {
   right: 0px;
   z-index: 2;
   height: 50px;
-  background-image: url("../public/Asset-3.svg");
+  background-image: url('../public/Asset-3.svg');
   background-size: auto;
 }
 
@@ -2575,7 +2575,7 @@ h1 {
   z-index: 4;
   width: 100vw;
   height: 40px;
-  background-image: url("../public/Asset-3.svg");
+  background-image: url('../public/Asset-3.svg');
   background-position: 50% 0%;
   background-size: 120%;
   background-repeat: no-repeat;
@@ -2591,7 +2591,7 @@ h1 {
 .heading {
   margin-top: 30px;
   margin-bottom: 30px;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   color: #218bce;
   font-size: 50px;
   font-weight: 100;
@@ -2601,7 +2601,7 @@ h1 {
 .who {
   padding-right: 200px;
   padding-left: 60px;
-  font-family: "Zilla Slab", sans-serif;
+  font-family: 'Zilla Slab', sans-serif;
   font-size: 25px;
   line-height: 35px;
   text-indent: 50px;
@@ -2648,7 +2648,7 @@ h1 {
 }
 
 .medianame {
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-style: normal;
   font-weight: 100;
   text-align: center;
@@ -2657,7 +2657,7 @@ h1 {
 .mediaicon {
   width: auto;
   height: 100px;
-  background-image: url("../public/iconmonstr-instagram-11.svg");
+  background-image: url('../public/iconmonstr-instagram-11.svg');
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -2669,12 +2669,12 @@ h1 {
 
 .mediaicon.facebook {
   position: static;
-  background-image: url("../public/iconmonstr-facebook-5.svg");
+  background-image: url('../public/iconmonstr-facebook-5.svg');
 }
 
 .mediatitle {
   margin-bottom: 20px;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-weight: 500;
   text-align: center;
 }
@@ -2689,7 +2689,7 @@ h1 {
   }
 
   .card-title {
-    font-family: "Fira Sans", sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     color: #111;
     font-size: 25px;
     line-height: 30px;
@@ -2768,14 +2768,14 @@ h1 {
 
   .benefits {
     margin-bottom: 0px;
-    font-family: "Fira Sans", sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-size: 15px;
     text-align: center;
   }
 
   .heading {
     margin-top: 20px;
-    font-family: "Fira Sans", sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     color: #218bce;
     font-size: 40px;
     font-weight: 500;
@@ -2787,7 +2787,7 @@ h1 {
     margin-bottom: 0px;
     padding-right: 200px;
     padding-left: 60px;
-    font-family: "Zilla Slab", sans-serif;
+    font-family: 'Zilla Slab', sans-serif;
     font-size: 18px;
     line-height: 27px;
     text-indent: 30px;
@@ -3126,7 +3126,7 @@ h1 {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    font-family: "Fira Sans", sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-size: 25px;
     line-height: 35px;
   }
@@ -3688,4 +3688,33 @@ h1 {
 
 .bpcommunity {
   margin-left: 10vw;
+}
+
+.circular-button {
+  border-radius: 50%;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.circular-button.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.grayText {
+  color: #666;
+}
+
+.otherUser {
+  color: red;
 }

@@ -4,12 +4,35 @@
   },
   "hosting": {
     "public": "out",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "rewrites": [
       {
         "source": "**",
         "destination": "/index.html"
       }
     ]
+  },
+  "emulators": {
+    "auth": {
+      "port": 4000
+    },
+    "functions": {
+      "port": 5000
+    },
+    "database": {
+      "port": 9000
+    },
+    "hosting": {
+      "port": 8000
+    },
+    "ui": {
+      "enabled": true,
+      "port": 3000
+    },
+    "singleProjectMode": true
   }
 }
